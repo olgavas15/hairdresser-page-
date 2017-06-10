@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+    <meta charset="UTF-8">
+    <title>Untitled Document</title>
+	<meta name="Author" content=""/>
+	<link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Tangerine">
+</head>
+<style>
+.cb-slideshow,
+.cb-slideshow:after { 
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    z-index: 0; 
+}
+.cb-slideshow:after { 
+    content: '';
+    background: transparent url(../images/pattern.png) repeat top left; 
+}
+.cb-slideshow li span { 
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    color: transparent;
+    background-size: cover;
+    background-position: 50% 50%;
+    background-repeat: none;
+    opacity: 0;
+    z-index: 0;
+    animation: imageAnimation 36s linear infinite 0s; 
+}
+.cb-slideshow li div { 
+    z-index: 1000;
+    position: absolute;
+     bottom:40px;
+    left: 0px;
+    width: 100%;
+    text-align: center;
+    opacity: 0;
+    color: #99004d;
+    animation: titleAnimation 36s linear infinite 0s; 
+}
+
+.cb-slideshow li div h3 { 
+  font-family: 'Tangerine', serif;
+     
+    font-size:90px;
+   padding-left:0.3em;
+  padding-right:0.5em;
+    line-height:60px; 
+}
+.cb-slideshow li:nth-child(1) span { 
+    background-image: url(https://farm3.staticflickr.com/2893/33367936763_2082804302_c.jpg) 
+}
+.cb-slideshow li:nth-child(2) span { 
+    background-image: url(https://farm3.staticflickr.com/2833/33797590920_723b239d00_c.jpg);
+    animation-delay: 6s; 
+}
+.cb-slideshow li:nth-child(3) span { 
+    background-image: url(https://farm3.staticflickr.com/2820/33797590050_d7d201d052_c.jpg);
+    animation-delay: 12s; 
+}
+.cb-slideshow li:nth-child(4) span { 
+    background-image: url(https://farm3.staticflickr.com/2810/33797591340_2df898e1aa_c.jpg);
+    animation-delay: 18s; 
+}
+.cb-slideshow li:nth-child(5) span { 
+    background-image: url(https://farm3.staticflickr.com/2949/33797592620_73c86a0bbf_b.jpg);
+    animation-delay: 24s; 
+}
+.cb-slideshow li:nth-child(6) span { 
+    background-image: url(https://farm3.staticflickr.com/2895/33797593690_2321393b06_c.jpg);
+    animation-delay: 30s; 
+}
+
+.cb-slideshow li:nth-child(2) div { 
+    animation-delay: 6s; 
+}
+.cb-slideshow li:nth-child(3) div { 
+    animation-delay: 12s; 
+}
+.cb-slideshow li:nth-child(4) div { 
+    animation-delay: 18s; 
+}
+.cb-slideshow li:nth-child(5) div { 
+    animation-delay: 24s; 
+}
+.cb-slideshow li:nth-child(6) div { 
+    animation-delay: 30s; 
+}
+@keyframes imageAnimation { 
+    0% { opacity: 0; animation-timing-function: ease-in; }
+    8% { opacity: 1; animation-timing-function: ease-out; }
+    17% { opacity: 1 }
+    25% { opacity: 0 }
+    100% { opacity: 0 }
+}
+@keyframes titleAnimation { 
+    0% { opacity: 0 }
+    8% { opacity: 1 }
+    17% { opacity: 1 }
+    19% { opacity: 0 }
+    100% { opacity: 0 }
+}
+.no-cssanimations .cb-slideshow li span{
+	opacity: 1;
+}
+@media screen and (max-width: 1140px) { 
+    .cb-slideshow li div h3 { font-size: 100px }
+}
+
+@media screen and (max-width: 600px) { 
+    .cb-slideshow li div h3 { font-size: 45px }
+}
+@media screen and (min-width: 600px) { 
+  .cb-slideshow li div h3 { padding-left:2em;
+    
+  }
+}
+ @media screen and (min-width:600px) { 
+   #marina{
+     text-align: right;
+     width:40%;
+   
+   }     }  
+  
+
+@media screen and (min-width:600px) { 
+  .cb-slideshow li div img {
+  position: absolute;
+   text-align: right;
+  bottom:2em;
+   
+  
+}
+  
+  }
+
+h2{font-size:4em;
+  font:bold;
+ color: #99004d;
+}
+@media screen and (min-width:600px) { 
+  h2 {
+  font-size:6em;
+    padding:1em;
+  }}
+
+h6{
+  text-align: right ;
+  padding-right:1em;
+  font-size:15px;
+ color:gray;
+}
+a {
+  color:#99004d;
+
+}
+a:hover { 
+   color:white;
+}
+#header{
+  color:#99004d;
+  position:fixed;
+    z-index: 10000000;
+  padding:0.5em;
+  
+}
+
+ul{
+  
+  list-style-type: none;
+}
+@media screen and (min-width:600px) { 
+ #link { line-height:90px;
+  font-size:60px;
+  }}
+
+@media screen and (max-width: 1140px) 
+  #header{ padding-top:3.5em;
+    width:100%;
+    background-color:#eaeae8;
+    }}
+  
+</style>
+<body>
+
+<header>
+  <div id="header">
+    <h4><b>Марина</b></br>+380979014798</h4>
+    <h2></h2></div>
+</header>
+<section>
+  <ul class="cb-slideshow">
+    <li>
+      <span>Image 01</span>
+      <div>
+        <h3>Парикмахерские услуги</h3>
+
+      </div>
+    </li>
+    <li><span>Image 02</span>
+
+      <div id="pic">
+
+        <div id="marina">
+
+          <img width="85%" src="https://farm3.staticflickr.com/2921/34055131281_31cf344fb1_m.jpg" alt="Marina Vasilik">
+          <h2></h2>
+        </div>
+
+      </div>
+    </li>
+    <li> <span>Image 03</span>
+      <div>
+        <label>
+   <a href="https://www.facebook.com/marina.vasilik.9/media_set?set=a.10206121915859744.1073741829.1018417135&type=3" target="_blank"><h3 id="link">Посмотреть фотографии</br> работы мастера <h3></a>        </br></br>
+</label>
+      </div>
+    </li>
+    <li>
+      <span>Image 04</span>
+      <div>
+
+      </div>
+    </li>
+    <li>
+      <span>Image 05</span>
+      <div>
+        <h3>re·lax·a·tion</h3>
+      </div>
+    </li>
+    <li>
+      <span>Image 06</span>
+      <div>
+
+        <footer>
+          <h6>Coded by Olga Kvasyuk</h6>
+          <footer>
+      </div>
+    </li>
+  </ul>
+</section>
+
+
+</body>
+</html>
